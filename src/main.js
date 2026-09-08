@@ -85,7 +85,7 @@ app.innerHTML = `
       <div class="game-panel hidden-game" id="huntGame"><div class="game-info"><span class="game-number">GAME 02</span><h3>FILTER HUNT</h3><p>Find the exact filter the announcer calls before the clock melts.</p><div class="hunt-target" id="huntTarget">READY?</div><div class="game-score"><b id="huntScore">0</b><span>HITS</span><b id="huntTime">15</b><span>SECONDS</span></div><button class="game-button" id="huntStart">START THE HUNT ↗</button></div><div class="hunt-board" id="huntBoard"></div></div>
       <div class="game-panel hidden-game" id="frenzyGame"><div class="game-info"><span class="game-number">GAME 03</span><h3>CLICK FRENZY</h3><p>Click the good face as fast as possible. The bad faces are decoys. Obviously.</p><div class="hunt-target" id="frenzyStatus">10 SECONDS OF NONSENSE</div><div class="game-score"><b id="frenzyScore">0</b><span>CLICKS</span><b id="frenzyTime">10</b><span>SECONDS</span></div><button class="game-button" id="frenzyStart">RELEASE THE CHAOS ↗</button></div><div class="frenzy-board" id="frenzyBoard"></div></div>
     </section>
-    <footer class="footer"><span>RIJUNA / 2026 / THE INTERNET'S LEAST NECESSARY TOOL</span><span id="unlockText">10 CLICKS UNLOCKS SOMETHING</span></footer>
+    <footer class="footer"><span>RIJUNA / 2026 / THE INTERNET'S LEAST NECESSARY TOOL</span><span id="unlockText">10 CLICKS UNLOCKS SOMETHING</span><a href="/disclaimer.html">DISCLAIMER / PARODY NOTICE</a></footer>
   </main>
   <div class="toast" id="toast"></div><div class="floating-phrase" id="floatingPhrase"></div>
 `;

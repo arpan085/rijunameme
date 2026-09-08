@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root { --ink: #141413; --paper: #f3ecd9; --acid: #d5ff3f; --red: #ff4f38; --blue: #466bff; }
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; }
+body { display: grid; place-items: center; padding: 32px 20px; overflow-x: hidden; color: var(--ink); font-family: 'Space Grotesk', sans-serif; background: radial-gradient(circle at 80% 20%, rgba(70,107,255,.16), transparent 28%), linear-gradient(135deg, rgba(213,255,63,.2), transparent 48%), var(--paper); }
+body:before { content: ''; position: fixed; inset: 0; pointer-events: none; opacity: .32; background-image: linear-gradient(rgba(20,20,19,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(20,20,19,.05) 1px, transparent 1px); background-size: 28px 28px; }
+.notice { position: relative; width: min(720px, 100%); padding: clamp(28px, 7vw, 70px); border: 2px solid var(--ink); background: var(--paper); box-shadow: 12px 12px 0 var(--ink); }
+.back, .kicker, .fine-print { font: 500 10px 'DM Mono', monospace; letter-spacing: .08em; }
+.back { color: var(--ink); text-decoration: none; }.back:hover { color: var(--red); }.kicker { margin: 42px 0 16px; color: var(--red); }
+h1 { max-width: 480px; margin: 0; font: clamp(58px, 12vw, 108px)/.82 'Anton', sans-serif; }h1 em { color: var(--blue); font-style: normal; }.strong { font-weight: 700; }.copy { max-width: 530px; margin-top: 34px; font-size: 16px; line-height: 1.55; }.copy p { margin: 0 0 18px; }.fine-print { max-width: 530px; margin: 35px 0 25px; color: rgba(20,20,19,.6); line-height: 1.55; letter-spacing: 0; }.return-button { display: inline-block; padding: 14px 16px; background: var(--acid); border: 1px solid var(--ink); color: var(--ink); font: 500 10px 'DM Mono', monospace; text-decoration: none; }.return-button:hover { background: var(--red); }.stamp { position: absolute; top: 52px; right: 7%; padding: 13px 9px; border: 3px solid var(--red); color: var(--red); font: 20px/.85 'Anton', sans-serif; text-align: center; transform: rotate(9deg); }
+@media (max-width: 560px) { body { padding: 15px; }.notice { box-shadow: 7px 7px 0 var(--ink); padding: 28px 22px; }.kicker { margin-top: 38px; }.stamp { top: 74px; right: 20px; font-size: 15px; }.copy { margin-top: 28px; font-size: 14px; }.fine-print { margin-top: 28px; font-size: 9px; }.return-button { width: 100%; text-align: center; min-height: 46px; } }
